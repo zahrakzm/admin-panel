@@ -37,29 +37,7 @@ const App = () => {
    </Router>
 
       <div className="container">
-        {/* <Sidebar /> */}
-     {/* <Home /> */}
-
-        {/* <Link>
-            <ul className="Links">
-              <li>
-                <MessageTwoTone />
-                <Link to="/message">Messages</Link>
-              </li>
-              <li>
-                <NotificationTwoTone />
-                <Link to="/notifications">Notifications</Link>
-              </li>
-              <li>
-                <SwitcherTwoTone />
-                <Link to="/blog">Blog</Link>
-              </li>
-              <li>
-                <InfoCircleTwoTone />
-                <Link to="/news">News</Link>
-              </li>
-            </ul>
-          </Link> */}
+     
       </div>
       <Footer />
     </div>

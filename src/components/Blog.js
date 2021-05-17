@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react'
 
-function Blog() {
-    console.log('blohhhh')
-  return <div>this is your Blog</div>;
+function Blog () {
+  return
+  ;<div>this is your Blog</div>
 }
 
-export default Blog;
+export default Blog

@@ -1,16 +1,13 @@
 import React from "react";
 import "../assets/custom.css";
-import { BrowserRouter as Router, Link, Route , Switch } from "react-router-dom";
+import {  Link } from "react-router-dom";
 import {
   MessageTwoTone,
   NotificationTwoTone,
   InfoCircleTwoTone,
   SwitcherTwoTone,
 } from "@ant-design/icons";
-import Messages from "./Messages";
-import Notification from "./Notifications";
-import News from "./News";
-import Blog from "./Blog";
+
 
 function Header() {
   return (
