@@ -1,25 +1,69 @@
-import logo from './logo.svg';
-import './App.css';
+import "./assets/custom.css";
+import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
+import Sidebar from "./components/Sidebar";
+import Header from "./components/Header";
+import Home from "./components/Home";
+import Footer from "./components/Footer";
+import Messages from "./components/Messages";
+import News from "./components/News";
+import Notification from "./components/Notifications";
+import Blog from "./components/Blog";
 
-function App() {
+
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <Router>
+   <Header />
+   <div className= 'container2'>
+   <Sidebar />
+     <Switch>
+       <Route  exact path = '/' component= {Home} />
+       <Route path="/message">
+         <Messages />
+       </Route>
+       <Route path="/notifications">
+         <Notification />
+       </Route>
+       <Route path="/news">
+         <News />
+       </Route>
+       <Route path="/blog">
+         <Blog />
+       </Route>
+     </Switch>
+     </div>
+   </Router>
+
+      <div className="container">
+        {/* <Sidebar /> */}
+     {/* <Home /> */}
+
+        {/* <Link>
+            <ul className="Links">
+              <li>
+                <MessageTwoTone />
+                <Link to="/message">Messages</Link>
+              </li>
+              <li>
+                <NotificationTwoTone />
+                <Link to="/notifications">Notifications</Link>
+              </li>
+              <li>
+                <SwitcherTwoTone />
+                <Link to="/blog">Blog</Link>
+              </li>
+              <li>
+                <InfoCircleTwoTone />
+                <Link to="/news">News</Link>
+              </li>
+            </ul>
+          </Link> */}
+      </div>
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
