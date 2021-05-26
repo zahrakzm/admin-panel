@@ -42,19 +42,18 @@ body {
   padding-right: 90px;
   max-height: 80%;
   font-size: 20px;
- margin: 0;
+  margin: 0;
   list-style-type: none;
 }
 
-.Navbar .Links li{
-  display: inline block;
+.Navbar .Links li {
   float: right;
 }
 
 .Navbar .Links a {
   text-decoration: none;
   padding-right: 20px;
-    padding-left: 5px;
+  padding-left: 5px;
   color: #f47c35;
   font-weight: 600;
 }
@@ -69,6 +68,10 @@ body {
     font-size: 10px;
   }
 }
+.Home{
+  display: inline-block;
+  
+}
 .Sidebar {
   height: 100%;
   width: 250px;
@@ -78,17 +81,17 @@ body {
 
 .SidebarList {
   width: 250px;
-  height: auto;
+  height: 400px;
   padding: 0;
   font-size: 20px;
 }
 @media only screen and (max-width: 850px) {
-  .SidebarList{
+  .SidebarList {
     font-size: 18px;
   }
 }
 @media only screen and (max-width: 750px) {
-  .SidebarList{
+  .SidebarList {
     font-size: 15px;
   }
 }
@@ -122,14 +125,40 @@ body {
 .container {
   display: flex; 
   flex: 70%;
- flex-direction: row; 
-}
-.container2 {
-  display: flex; 
-  flex: 70%;
- flex-direction: row; 
+flex-direction: row;
 }
 
+.Footer {
+  background-color: #094c8d;
+  height: 200px;
+  position: relative;
 
+}
 
+.Footer ul {
+  list-style-type: none;
+
+}
+.Footer ul li {
+  float: right;
+  padding: 10px;
+  margin: 75px 12px 0 0;
+  
+}
+.Footer .FooterRight{
+  float: right;
+  
+
+}
+.Footer  .FooterLeft{
+  max-width: 50%;
+  max-height: 200px;
+  position: absolute;
+}
+.Footer  .FooterLeft img{
+  max-width: 50%;
+  max-height: 200px;
+  padding: 10px;
+  margin-left: 200px;
+}
 

@@ -4,11 +4,12 @@ import DashboardIcon from "@material-ui/icons/Dashboard";
 import PersonIcon from "@material-ui/icons/Person";
 import EditIcon from "@material-ui/icons/Edit";
 
+
 export const SidebarOptions = [
   {
     title: "Home",
     icon: <HomeIcon />,
-    link: "/home",
+    link: "/home",  
   },
   {
     title: "Dashboard",
