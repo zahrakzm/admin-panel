@@ -10,11 +10,13 @@ export const SidebarOptions = [
     title: "Home",
     icon: <HomeIcon />,
     link: "/home",  
+   
   },
   {
     title: "Dashboard",
     icon: <DashboardIcon />,
     link: "/dashboard",
+   path: '/Dashboard'
   },
   {
     title: "view Profile",

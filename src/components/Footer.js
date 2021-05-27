@@ -8,7 +8,7 @@ function Footer() {
     <div className="Footer">
       <div className= 'FooterRight'>
       <ul>
-        <IconContext.Provider value ={{ style: {fontSize: '30px' , color : 'rgb(255,255,255)' , marginRight: '220px'}}}>
+        <IconContext.Provider value ={{ style: {fontSize: '30px' , color : 'rgb(255,255,255)' }}}>
           <li>
             <FaTwitter />
           </li>

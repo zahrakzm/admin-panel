@@ -1,6 +1,8 @@
 import React from "react";
 import "../assets/custom.css";
 import { SidebarOptions } from "./SidebarOptions";
+import {Link} from 'react-router-dom'
+
 
 const Sidebar = () => {
   return (
@@ -14,6 +16,7 @@ const Sidebar = () => {
               key={key}
               onClick={() => (window.location.pathname = value.link)}
             >
+              <Link to = {value.pathname}> </Link>
               <div id= 'icon'>{value.icon}</div>
               <div id='title'>{value.title}</div>
             </li>
